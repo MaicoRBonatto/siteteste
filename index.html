@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Santa Luzia do Rio Claro: memória de uma comunidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDF1F0;--ink:#12262B;--muted:#4C6167;--river:#1F5F6B;--sun:#B8860B;--card:#FFFFFF;--line:#C9D5D4;
+--p1:#7FA9A8;--p2:#D9B26F;--p3:#A9B98F;--p4:#C98F6B;--p5:#8FA0B9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A1D;--ink:#E6EEED;--muted:#9FB3B6;--river:#6CB6C2;--sun:#E0B04A;--card:#172428;--line:#2A3D42}}
+:root[data-theme="dark"]{--bg:#0F1A1D;--ink:#E6EEED;--muted:#9FB3B6;--river:#6CB6C2;--sun:#E0B04A;--card:#172428;--line:#2A3D42}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+a{color:var(--river)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{padding:28px 0 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-weight:500}
+header nav{display:flex;gap:20px}
+header a{text-decoration:none;color:var(--ink)}
+header a:hover{color:var(--river)}
+.hero{padding:64px 0 48px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.8rem);max-width:15ch;letter-spacing:-.01em}
+.hero p{max-width:56ch;color:var(--muted);font-size:1.15rem;margin:22px 0 0}
+.strip{display:flex;gap:10px;margin-top:40px;height:120px}
+.strip div{flex:1;border-radius:4px;position:relative;overflow:hidden}
+.strip div:nth-child(even){margin-top:18px;margin-bottom:-18px}
+section{padding:56px 0}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 32px}
+/* linha do tempo */
+.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--river)}
+.tl li{padding:0 0 30px 24px;position:relative;max-width:66ch}
+.tl li::before{content:"";position:absolute;left:-10px;top:8px;width:17px;height:17px;border-radius:50%;background:var(--sun);border:3px solid var(--bg)}
+.tl b{font-family:"Young Serif",Georgia,serif;font-size:1.5rem;font-weight:400;color:var(--river);display:block}
+/* galeria */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filters button{font:500 15px Figtree,sans-serif;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--river);color:var(--bg);border-color:var(--river)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;align-items:start}
+figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+figure.hide{display:none}
+.ph{position:relative;display:flex;align-items:flex-end;padding:10px;color:#fff;font-size:12px;font-weight:500}
+.ph svg{position:absolute;inset:0;width:100%;height:100%}
+.ph span{position:relative;background:rgba(0,0,0,.45);padding:2px 8px;border-radius:3px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ph.ok svg,.ph.ok span{display:none}.t{aspect-ratio:4/5}.w{aspect-ratio:4/3}.s{aspect-ratio:1/1}
+figcaption{padding:12px 14px 14px;font-size:15px;line-height:1.45}
+figcaption b{display:block;color:var(--river)}
+/* relatos */
+.rel{display:grid;gap:22px}
+blockquote{margin:0;padding:26px 28px;background:var(--card);border-left:6px solid var(--sun);border-radius:0 4px 4px 0}
+blockquote p{font-family:"Young Serif",Georgia,serif;font-size:1.3rem;line-height:1.45;margin:0 0 14px}
+blockquote footer{display:block;padding:0;color:var(--muted);font-size:15px}
+blockquote footer b{color:var(--ink)}
+@media(min-width:800px){.rel{grid-template-columns:1fr 1fr}.rel blockquote:first-child{grid-column:1/-1}.rel blockquote:first-child p{font-size:1.7rem}}
+/* contribua */
+.cta{background:var(--river);color:#fff;border-radius:6px;padding:40px 32px}
+.cta h2{color:#fff}
+.cta p{max-width:56ch;margin:0 0 22px}
+.cta a{display:inline-block;background:#fff;color:#12262B;padding:12px 22px;border-radius:4px;font-weight:700;text-decoration:none}
+footer.site{padding:32px 0 48px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><strong>Santa Luzia do Rio Claro</strong>
+<nav><a href="#historia">História</a><a href="#fotos">Fotos</a><a href="#relatos">Relatos</a><a href="#contribua">Participe</a></nav></header>
+
+<div class="hero">
+<h1>Sessenta anos de gente que ficou</h1>
+<p>Um arquivo vivo feito pelos moradores: fotos de família, histórias contadas na calçada e a memória de como um punhado de casas à beira do rio virou uma comunidade.</p>
+<div class="strip" aria-hidden="true">
+<div style="background:var(--p1)"></div><div style="background:var(--p2)"></div><div style="background:var(--p3)"></div><div style="background:var(--p4)"></div><div style="background:var(--p5)"></div><div style="background:var(--p2)"></div>
+</div>
+</div>
+
+<section id="historia">
+<h2>Como tudo começou</h2>
+<p class="lead">Cinco momentos que os moradores mais lembram.</p>
+<ol class="tl">
+<li><b>1962</b>Três famílias de pescadores constroem as primeiras casas de madeira na margem do rio e abrem o caminho de terra até a estrada.</li>
+<li><b>1978</b>Chega a primeira escola, numa sala cedida pela capela. Dona Lourdes ensina 22 crianças de idades diferentes na mesma turma.</li>
+<li><b>1994</b>Os moradores se organizam em associação e conseguem a rede de água encanada, depois de dois anos de mutirões e reuniões.</li>
+<li><b>2008</b>Nasce a festa da colheita, que hoje reúne a comunidade inteira e visitantes de bairros vizinhos.</li>
+<li><b>2021</b>Começa este projeto de memória: cada família traz suas fotos para serem digitalizadas e catalogadas.</li>
+</ol>
+</section>
+
+<section id="fotos">
+<h2>Álbum da comunidade</h2>
+<p class="lead">Filtre por época. Nesta versão de exemplo, os quadros coloridos marcam onde cada foto real entraria.</p>
+<div class="filters" role="group" aria-label="Filtrar por época">
+<button aria-pressed="true" data-f="all">Todas</button>
+<button aria-pressed="false" data-f="60">Anos 1960 e 70</button>
+<button aria-pressed="false" data-f="80">Anos 1980 e 90</button>
+<button aria-pressed="false" data-f="00">Anos 2000 em diante</button>
+</div>
+<div class="gal" id="gal"></div>
+</section>
+
+<section id="relatos">
+<h2>Quem viveu conta</h2>
+<p class="lead">Relatos gravados e transcritos com os moradores.</p>
+<div class="rel">
+<blockquote><p>Quando cheguei, o rio era a nossa rua. A gente ia de canoa na casa da vizinha e voltava com pão quente.</p><footer><b>Seu Otávio, 81 anos</b>, mora na comunidade desde 1962</footer></blockquote>
+<blockquote><p>Aprendi a ler numa sala emprestada, sentada no chão. Hoje ensino minha neta na mesma mesa.</p><footer><b>Dona Marta, 63 anos</b>, aluna da primeira turma da escola</footer></blockquote>
+<blockquote><p>Água na torneira mudou tudo. Minha mãe parou de carregar balde e a gente ganhou tempo para estudar.</p><footer><b>Rosana, 44 anos</b>, filha de fundadores da associação</footer></blockquote>
+</div>
+</section>
+
+<section id="contribua">
+<div class="cta">
+<h2>Tem uma foto ou uma história?</h2>
+<p>Envie uma imagem antiga ou grave um relato curto. Cada contribuição entra no arquivo com o nome de quem a trouxe.</p>
+<a href="mailto:memoria@exemplo.com.br">Enviar minha contribuição</a>
+</div>
+</section>
+
+<footer class="site">Página de exemplo com dados fictícios. Substitua textos e fotos pelos da sua comunidade.</footer>
+</div>
+
+<script>
+var fotos=[
+["60","t","1962","Primeira casa à beira do rio","Construída em mutirão por três famílias.","#7FA9A8","1962-primeira-casa.jpg"],
+["60","w","1970","Barcos na margem","A pesca sustentava quase todas as casas.","#8FA0B9","1970-barcos.jpg"],
+["60","s","1978","Turma da primeira escola","22 alunos numa única sala.","#D9B26F","1978-primeira-escola.jpg"],
+["80","w","1985","Procissão da capela","Encontro anual dos moradores.","#C98F6B","1985-procissao.jpg"],
+["80","t","1994","Mutirão da água encanada","Homens e mulheres abrindo valas.","#A9B98F","1994-mutirao-agua.jpg"],
+["80","s","1997","Inauguração da associação","Primeira diretoria eleita.","#7FA9A8","1997-associacao.jpg"],
+["00","w","2008","Primeira festa da colheita","Mesa comprida na rua principal.","#D9B26F","2008-festa-colheita.jpg"],
+["00","t","2015","Campinho reformado","Crianças e jovens no time da vila.","#8FA0B9","2015-campinho.jpg"],
+["00","s","2021","Dia da digitalização","Famílias trazendo fotos antigas.","#C98F6B","2021-digitalizacao.jpg"]];
+var g=document.getElementById("gal");
+fotos.forEach(function(f){
+var el=document.createElement("figure");el.dataset.era=f[0];
+el.innerHTML='<div class="ph '+f[1]+'" role="img" aria-label="Espaço para foto: '+f[3]+'" style="background:'+f[5]+'"><img src="fotos/'+f[6]+'" alt="'+f[3]+'" loading="lazy" onload="this.parentNode.classList.add(\'ok\')" onerror="this.remove()"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 72 Q25 62 50 72 T100 70 V100 H0Z" fill="rgba(0,0,0,.18)"/><circle cx="76" cy="24" r="9" fill="rgba(255,255,255,.55)"/></svg><span>foto de exemplo</span></div><figcaption><b>'+f[2]+'</b>'+f[3]+'. '+f[4]+'</figcaption>';
+g.appendChild(el);});
+document.querySelectorAll(".filters button").forEach(function(b){
+b.addEventListener("click",function(){
+document.querySelectorAll(".filters button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+var k=b.dataset.f;
+g.querySelectorAll("figure").forEach(function(fig){fig.classList.toggle("hide",k!=="all"&&fig.dataset.era!==k)});});});
+</script>
+</body>
+</html>
